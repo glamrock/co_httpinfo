@@ -1,10 +1,13 @@
 co_httpinfo
 ===========
 
-_Olsr's httpinfo plugin customized for Commotion's dashboard_
+Olsr's httpinfo plugin customized for Commotion's dashboard
+
+===========
 
 #About
-This plugin for olsrd creates a page on the fly to display common network stats.
+
+This plugin for olsrd creates a page on the fly to 
 
 Information returned includes:
 * olsrd routes
@@ -15,6 +18,7 @@ Information returned includes:
 * IP and MAC addresses
 
 ##Use & options
+
 Default port if not defined is 1978. You can set a custom port number to avoid conflicts as necessary. Don't forget to allow this port in your firewall if you'd like to access it from a remote host.
 
 By setting IP address, you are defining which addresses are allowed to access the page. To allow access from all IP addresses, use ` PlParam   "Net" "0.0.0.0 0.0.0.0"` For local networks, this should not be a problem. For networks that are connected to the internet, more security is needed.  (So perhaps consider *only* allowing your local IP to access the dashboard).
@@ -49,11 +53,13 @@ access is always allowed from 127.0.0.1(localhost).
 This will run the service on port 80 and allow all access from the local 192.168.*.* network. Notably, this will work even if there's another webserver installed, as it doesn't rely on the 127.0.0.1 address (which is whitelisted by default).
 
 ## Admin Interface
+
 This is a web page that will let the user change olsrd settings in realtime.
 
 To compile with this *experimental* feature pass `ADMIN_INTERFACE=1` as an argument to make (eg. `make ADMIN_INTERFACE=1`)
 
 ##Compiling
+
 httpinfo is compatible with Windows, Debian-based linux distros, and FreeBSD. Please use the command line.
 
 *Windows*
@@ -69,6 +75,7 @@ httpinfo is compatible with Windows, Debian-based linux distros, and FreeBSD. Pl
 `gmake install`
 
 ## Problem?
+
 If, after compiling, httpinfo won't work, there are several possibilities:
 
 * Not including the module in the config (surprisingly common!)
