@@ -3,7 +3,7 @@ co_httpinfo
 
 _Olsr's httpinfo plugin customized for Commotion's dashboard_
 
-#About
+##About
 This plugin for olsrd creates a page on the fly to display common network stats.
 
 Information returned includes:
@@ -57,16 +57,16 @@ To compile with this *experimental* feature pass `ADMIN_INTERFACE=1` as an argum
 httpinfo is compatible with Windows, Debian-based linux distros, and FreeBSD. Please use the command line.
 
 *Windows*
-`make OS=win32`
-`make install`
+    make OS=win32
+    make install
 
 *Linux*
-`make`
-`make install`
+    make
+    make install
 
 *FreeBSD*
-`gmake OS=fbsd`
-`gmake install`
+    gmake OS=fbsd
+    gmake install
 
 ## Problem?
 If, after compiling, httpinfo won't work, there are several possibilities:
