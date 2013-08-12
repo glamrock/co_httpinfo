@@ -111,29 +111,7 @@ static char copyright_string[] __attribute__ ((unused)) =
         (strlen(req) && !strcmp(&req[1], filename))
 
 static const char httpinfo_css[] =
-  "#A {text-decoration: none}\n" "TH{text-align: left}\n" "H1, H3, TD, TH {font-family: Helvetica; font-size: 80%}\n"
-  "h2\n {\nfont-family: Helvetica;\n font-size: 14px;text-align: center;\n"
-  "line-height: 16px;\ntext-decoration: none;\nborder: 1px solid #ccc;\n" "margin: 5px;\nbackground: #ececec;\n}\n"
-  "hr\n{\nborder: none;\npadding: 1px;\nbackground: url(grayline.gif) repeat-x bottom;\n}\n"
-  "#maintable\n{\nmargin: 0px;\npadding: 5px;\nborder-left: 1px solid #ccc;\n"
-  "border-right: 1px solid #ccc;\nborder-bottom: 1px solid #ccc;\n}\n"
-  "#footer\n{\nfont-size: 10px;\nline-height: 14px;\ntext-decoration: none;\ncolor: #666;\n}\n"
-  "#hdr\n{\nfont-size: 14px;\ntext-align: center;\nline-height: 16px;\n" "text-decoration: none;\nborder: 1px solid #ccc;\n"
-  "margin: 5px;\nbackground: #ececec;\n}\n"
-  "#container\n{\nwidth: 1000px;\npadding: 30px;\nborder: 1px solid #ccc;\nbackground: #fff;\n}\n"
-  "#tabnav\n{\nheight: 20px;\nmargin: 0;\npadding-left: 10px;\n" "background: url(grayline.gif) repeat-x bottom;\n}\n"
-  "#tabnav li\n{\nmargin: 0;\npadding: 0;\ndisplay: inline;\nlist-style-type: none;\n}\n"
-  "#tabnav a:link, #tabnav a:visited\n{\nfloat: left;\nbackground: #ececec;\n"
-  "font-size: 12px;\nline-height: 14px;\nfont-weight: bold;\npadding: 2px 10px 2px 10px;\n"
-  "margin-right: 4px;\nborder: 1px solid #ccc;\ntext-decoration: none;\ncolor: #777;\n}\n"
-  "#tabnav a:link.active, #tabnav a:visited.active\n{\nborder-bottom: 1px solid #fff;\n" "background: #ffffff;\ncolor: #000;\n}\n"
-  "#tabnav a:hover\n{\nbackground: #777777;\ncolor: #ffffff;\n}\n"
-  ".input_text\n{\nbackground: #E5E5E5;\nmargin-left: 5px; margin-top: 0px;\n"
-  "text-align: left;\n\nwidth: 100px;\npadding: 0px;\ncolor: #000000;\n"
-  "text-decoration: none;\nfont-family: verdana;\nfont-size: 12px;\n" "border: 1px solid #ccc;\n}\n"
-  ".input_button\n{\nbackground: #B5D1EE;\nmargin-left: 5px;\nmargin-top: 0px;\n"
-  "text-align: center;\nwidth: 120px;\npadding: 0px;\ncolor: #000000;\n"
-  "text-decoration: none;\nfont-family: verdana;\nfont-size: 12px;\n" "border: 1px solid #000;\n}\n";
+  "@import url('tinyboard.css');";
 
 typedef void (*build_body_callback) (struct autobuf *);
 

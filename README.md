@@ -69,7 +69,7 @@ httpinfo is compatible with Windows, Debian-based linux distros, and FreeBSD. Pl
     gmake install
 
 ## Problem?
-If, after compiling, httpinfo won't work, there are several possibilities:
+If, after compiling, httpinfo won't work, there are several possibilities: 
 
 * Not including the module in the config (surprisingly common!)
 * Not using the port you've set in the config file
